@@ -89,3 +89,12 @@
     @apply bg-background text-foreground;
   }
 }
+.bg-custom-gradient {
+  background: linear-gradient(
+    to bottom right,
+    #18101a 0%,
+    #431d4f 40%,
+    #2d1d60 65%,
+    #432066 100%
+  );
+}
