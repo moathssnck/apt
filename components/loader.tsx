@@ -9,7 +9,6 @@ export default function FullPageLoader() {
 
         {/* Logo */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-yellow-500 text-4xl font-extrabold tracking-widest">5G</span>
         </div>
       </div>
 
@@ -19,8 +18,8 @@ export default function FullPageLoader() {
           height: 120px;
           border-radius: 50%;
           border: 4px solid rgba(255, 200, 0, 0.15);
-          border-top-color: gold;
-          border-right-color: rgba(255, 200, 0, 0.35);
+          border-top-color: #2d1d60;
+          border-right-color:#2d1d60;
           animation: spin 1.1s linear infinite, glow 1.5s ease-in-out infinite alternate;
         }
 
@@ -30,8 +29,8 @@ export default function FullPageLoader() {
         }
 
         @keyframes glow {
-          from { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
-          to { box-shadow: 0 0 25px rgba(255, 215, 0, 0.7); }
+          from { box-shadow: 0 0 10px pink; }
+          to { box-shadow: 0 0 25px #2d1d60; }
         }
       `}</style>
     </div>
