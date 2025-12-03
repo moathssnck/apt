@@ -49,13 +49,14 @@ export function BioLinks() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-neutral-900 to-black" dir="rtl">
+    <div className="min-h-screen bg-custom-gradient" dir="rtl">
       <div className="container mx-auto px-4 py-10 max-w-2xl">
-        {loading&&<FullPageLoader/>}
+        {loading && <FullPageLoader />}
+
         {/* Logo Section */}
         <div className="text-center mb-10 animate-fade-in">
           <div
-            className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-yellow-600 to-yellow-400 shadow-[0_0_25px_rgba(255,215,0,0.6)] flex items-center justify-center text-black text-4xl font-extrabold tracking-wider"
+            className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#2d1d60] to-pink-700  flex items-center justify-center text-white text-4xl font-extrabold tracking-wider"
             style={{
               animation: mounted ? "scale-in 0.5s ease-out" : "none",
             }}
@@ -97,13 +98,13 @@ export function BioLinks() {
                   animation: mounted ? `slide-up 0.5s ease-out ${0.3 + index * 0.1}s both` : "none",
                 }}
               >
-                <Card className="p-6 rounded-2xl border border-yellow-600/20 bg-black/40 backdrop-blur-lg shadow-lg hover:shadow-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300 hover:-translate-y-1 group">
+                <Card className="p-6 rounded-2xl border border-[#2d1d60]/20 bg-black/40 backdrop-blur-lg shadow-lg hover:shadow-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:-translate-y-1 group">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center group-hover:bg-yellow-500/20 transition-colors">
-                      <Icon className="w-6 h-6 text-yellow-500" />
+                    <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
+                      <Icon className="w-6 h-6 text-pink-500" />
                     </div>
                     <div className="flex-1 text-right">
-                      <h3 className="font-semibold text-xl mb-1 text-white group-hover:text-yellow-500 transition-colors">
+                      <h3 className="font-semibold text-xl mb-1 text-white group-hover:text-pink-500 transition-colors">
                         {link.title}
                       </h3>
                       <p className="text-gray-400 text-sm">{link.description}</p>
@@ -117,7 +118,7 @@ export function BioLinks() {
 
         {/* Footer */}
         <div
-          className="border-t border-yellow-600/20 pt-6 mt-10 animate-fade-in"
+          className="border-t border-[#2d1d60]/20 pt-6 mt-10 animate-fade-in"
           style={{
             animation: mounted ? "fade-in 0.6s ease-out 1.2s both" : "none",
           }}
@@ -154,7 +155,6 @@ export function BioLinks() {
           to { opacity: 1; transform: scale(1); }
         }
       `}</style>
-
     </div>
   )
 }
