@@ -27,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
+<head>
+<meta name="google-site-verification" content="-tS0c9XigucNpFP2OjiZK7nVheeU_wxdFsqerEwXRLU" />
+</head>
       <body className={`${cairo.className} font-sans antialiased`}>
         {children}
 
